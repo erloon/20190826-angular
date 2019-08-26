@@ -1,15 +1,28 @@
 
+<!--
 <h1>
   {{ title }}
 </h1>
 
 {{helloWorld()}}
 
-<!--<span title="helloWorld()"> Mój test </span>-->
-<span [title]="helloWorld()"> Mój test </span>
+&lt;!&ndash;<span title="helloWorld()"> Mój test </span>&ndash;&gt;
+&lt;!&ndash;<span [title]="helloWorld()"> Mój test </span>&ndash;&gt;
+<span [title]="title + '!'"> Mój test </span>
 
 <p>
   {{randomNumber + 1 + 1}}
 </p>
 
-<router-outlet></router-outlet>
+<div *ngIf="showAlert"> Alert! </div>
+-->
+
+<app-header></app-header>
+
+<div class="container">
+  <app-main-menu></app-main-menu>
+  <router-outlet></router-outlet>
+</div>
+
+
+
