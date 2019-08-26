@@ -1,0 +1,15 @@
+
+<h1>
+  {{ title }}
+</h1>
+
+{{helloWorld()}}
+
+<!--<span title="helloWorld()"> Mój test </span>-->
+<span [title]="helloWorld()"> Mój test </span>
+
+<p>
+  {{randomNumber + 1 + 1}}
+</p>
+
+<router-outlet></router-outlet>
