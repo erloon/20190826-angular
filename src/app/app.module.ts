@@ -19,7 +19,9 @@ import { AuctionModule } from './auction/auction.module';
       AuctionModule,
     ],
     // schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    providers: [],
+    providers: [
+
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

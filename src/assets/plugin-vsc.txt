@@ -1,0 +1,15 @@
+Lista pomocnych wtyczek do angulara w VSC:
+
+1. Debugger for Chrome
+2. Angular Schematics
+3. angular2-inline
+4. Angular Language Service
+5. Angular Follow Selector
+6. Angular Component Extension
+
+
+
+7. Test Explorer UI
+8. Angular/Karma Test Explorer
+9. npm
+10. Path Intellisense
