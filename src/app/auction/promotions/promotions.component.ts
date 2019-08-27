@@ -4,12 +4,14 @@ import { Component, OnInit } from '@angular/core';
   selector: 'ap-promotion',
   template: `
     <p>
-      promotion works!
+      {{ todayDate | date:'dd-MMMM-yyyy' | uppercase  }}
     </p>
   `,
   styles: []
 })
 export class PromotionsComponent implements OnInit {
+
+  todayDate = new Date();
 
   constructor() { }
 

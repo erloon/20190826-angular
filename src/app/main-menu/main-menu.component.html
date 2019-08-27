@@ -11,7 +11,7 @@
         <a class="nav-link" href="#">{{element}} !!</a>
       </li>
       -->
-      <li class="nav-item" *ngFor="let item of menuItems">
+      <li [apHighlight] class="nav-item" *ngFor="let item of menuItems" routerLinkActive="active">
         <a class="nav-link" [routerLink]="item.link">{{item.title}}</a>
       </li>
     </ul>

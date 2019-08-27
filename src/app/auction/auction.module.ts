@@ -5,13 +5,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { AuctionRoutingModule } from './auction-routing.module';
 import { AuctionsComponent } from './auctions/auctions.component';
 import { PromotionsComponent } from './promotions/promotions.component';
-
-
+import { AuctionCardComponent } from './auction-card/auction-card.component';
+import { SharedModule } from '../shared/shared.module';
+import { AuctionsFilterPipe } from './auctions-filter.pipe';
 
 @NgModule({
   declarations: [
     AuctionsComponent,
-    PromotionsComponent
+    PromotionsComponent,
+    AuctionCardComponent,
+    AuctionsFilterPipe
   ],
   /*
   providers: [
@@ -21,7 +24,8 @@ import { PromotionsComponent } from './promotions/promotions.component';
   imports: [
     CommonModule,
     AuctionRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    SharedModule
   ],
   exports: [
     AuctionsComponent
