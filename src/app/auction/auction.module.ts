@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AuctionRoutingModule } from './auction-routing.module';
 import { AuctionsComponent } from './auctions/auctions.component';
 import { PromotionsComponent } from './promotions/promotions.component';
+
 
 
 @NgModule({
@@ -18,7 +20,8 @@ import { PromotionsComponent } from './promotions/promotions.component';
   */
   imports: [
     CommonModule,
-    AuctionRoutingModule
+    AuctionRoutingModule,
+    HttpClientModule
   ],
   exports: [
     AuctionsComponent
