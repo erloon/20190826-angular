@@ -8,7 +8,7 @@
       "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "ap",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -25,6 +25,8 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/solid.min.css",
               "src/styles.css"
             ],
             "scripts": []

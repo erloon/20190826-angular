@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'ap-root',
   /*template: `
       <h1>{{ title }}</h1>
   `,

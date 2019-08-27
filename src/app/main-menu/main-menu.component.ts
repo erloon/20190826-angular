@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { MenuItem } from './menu-item';
 
 @Component({
-  selector: 'app-main-menu',
+  selector: 'ap-main-menu',
   templateUrl: './main-menu.component.html',
   styleUrls: ['./main-menu.component.css']
 })

@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'app-header',
+  selector: 'ap-header',
   template: `
     <header class="jumbotron">
         <h1>
