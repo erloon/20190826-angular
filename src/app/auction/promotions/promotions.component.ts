@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
     <p>
       {{ todayDate | date:'dd-MMMM-yyyy' | uppercase  }}
     </p>
+    <ap-auction-card [showCartButton]="false" [auction]="{title: 'Hello', price: 3000}"></ap-auction-card>
   `,
   styles: []
 })

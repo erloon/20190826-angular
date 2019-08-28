@@ -1,1 +1,35 @@
-<p>add-auction works!</p>
+<h2>Dodaj nową aukcję</h2>
+<section class="row">
+  <div class="col-6">
+    <img class="img-thumbnail" alt="Podgląd fotografii" src="https://picsum.photos/id/8/200/300">
+  </div>
+  <div class="col-6">
+    <form>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-edit"></i></span>
+        </div>
+        <input type="text" name="title" class="form-control" placeholder="Nazwa aukcji">
+      </div>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-tag"></i></span>
+        </div>
+        <input type="number" name="price" class="form-control" placeholder="Cena aukcji">
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text"><i class="fa fa-image"></i></span>
+        </div>
+        <input type="number" name="imgUrl" class="form-control">
+      </div>
+      <div class="input-group mb-3">
+        <textarea rows="5" class="form-control" name="description" placeholder="Opis aukcji"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit"><i class="fa fa-gavel"> </i>
+        Dodaj aukcję
+      </button>
+    </form>
+  </div>
+</section>

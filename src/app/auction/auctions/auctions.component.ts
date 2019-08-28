@@ -4,6 +4,7 @@ import {takeUntil} from 'rxjs/operators';
 
 import {AuctionItem} from '../auction-item';
 import {AuctionService} from '../auction.service';
+import {CartService} from '../cart.service';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class AuctionsComponent implements OnInit, OnDestroy {
   unsubSubject = new Subject<void>();
   auctions: AuctionItem[] = [];
 
-  constructor(private auctionService: AuctionService) { }
+  constructor(private auctionService: AuctionService, private cartService: CartService) { }
 
   ngOnInit() {
     /*const sub1 = */
@@ -51,4 +52,7 @@ export class AuctionsComponent implements OnInit, OnDestroy {
     this.unsubSubject.complete();
   }
 
+  addAuctionToCart(auction: AuctionItem) {
+    this.cartService.addToCart(auction);
+  }
 }

@@ -1,5 +1,20 @@
 <div class="row">
+  <div class="col-8"><h2>Lista naszych aukcji</h2></div>
+  <div class="col-4"></div>
+</div>
+<div class="d-flex justify-content-end">
+  <!--
+       komponent który jest smart DI: cartService, --inlineStyle --inlineTemplate
+       skorzystaj z pipe | async !
+    -->
+  <ap-cart-item-counter></ap-cart-item-counter>
+</div>
+<div class="row">
   <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let auction of auctions | auctionsFilter:'' ">
-    <ap-auction-card [auction]="auction"></ap-auction-card>
+    <ap-auction-card
+      [auction]="auction"
+      (addToCart)="addAuctionToCart($event)"
+    >
+    </ap-auction-card>
   </div>
 </div>

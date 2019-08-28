@@ -10,6 +10,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AuctionsFilterPipe } from './auctions-filter.pipe';
 import { AddAuctionComponent } from './add-auction/add-auction.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { CartItemCounterComponent } from './cart-item-counter/cart-item-counter.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
     AuctionCardComponent,
     AuctionsFilterPipe,
     AddAuctionComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    CartItemCounterComponent
   ],
   /*
   providers: [

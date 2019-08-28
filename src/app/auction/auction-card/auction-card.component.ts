@@ -8,6 +8,6 @@ import {AuctionItem} from '../auction-item';
 })
 export class AuctionCardComponent {
   @Input() auction: AuctionItem;
-  // TODO: make it work on tomorrow:
+  @Input() showCartButton = true;
   @Output() addToCart = new EventEmitter<AuctionItem>();
 }

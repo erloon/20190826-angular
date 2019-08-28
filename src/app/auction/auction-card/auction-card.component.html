@@ -11,7 +11,7 @@
       <b>
         {{auction.price}} zł
       </b>
-      <button class="btn btn-primary">
+      <button *ngIf="showCartButton" class="btn btn-primary" (click)="addToCart.emit(auction)">
         <i class="fa fa-cart-plus"></i>
       </button>
     </div>
