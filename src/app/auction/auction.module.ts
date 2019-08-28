@@ -8,13 +8,17 @@ import { PromotionsComponent } from './promotions/promotions.component';
 import { AuctionCardComponent } from './auction-card/auction-card.component';
 import { SharedModule } from '../shared/shared.module';
 import { AuctionsFilterPipe } from './auctions-filter.pipe';
+import { AddAuctionComponent } from './add-auction/add-auction.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
     AuctionsComponent,
     PromotionsComponent,
     AuctionCardComponent,
-    AuctionsFilterPipe
+    AuctionsFilterPipe,
+    AddAuctionComponent,
+    ShoppingCartComponent
   ],
   /*
   providers: [

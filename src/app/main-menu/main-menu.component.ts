@@ -12,7 +12,7 @@ export class MainMenuComponent implements OnInit {
   menuItems: MenuItem[] = [
     {link: 'auctions', title: 'Aukcje'},
     {link: 'promotions', title: 'Promocje'},
-    {link: 'adivces', title: 'Podpowiadamy'},
+    {link: 'advices', title: 'Podpowiadamy'},
   ];
   showMenu = false;
 
