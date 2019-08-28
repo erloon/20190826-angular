@@ -6,8 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
 import { AuctionModule } from './auction/auction.module';
-import {SharedModule} from './shared/shared.module';
-import {AdviceModule} from './advice/advice.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
     declarations: [
@@ -19,7 +18,6 @@ import {AdviceModule} from './advice/advice.module';
       BrowserModule,
       AppRoutingModule,
       AuctionModule,
-      AdviceModule,
       SharedModule
     ],
     // schemas: [CUSTOM_ELEMENTS_SCHEMA],
