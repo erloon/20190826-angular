@@ -16,6 +16,7 @@ import {CartService} from '../cart.service';
 export class AuctionsComponent implements OnInit, OnDestroy {
 
   // auctionSub = new Subscription();
+  filterBy = '';
   unsubSubject = new Subject<void>();
   auctions: AuctionItem[] = [];
 

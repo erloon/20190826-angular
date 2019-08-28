@@ -27,6 +27,13 @@
       "description": " Opis mojej aukcji 4",
       "price": 400,
       "imgUrl": "https://picsum.photos/id/412/200/200"
+    },
+    {
+      "title": "Hello auction",
+      "price": 1230,
+      "imgUrl": "https://picsum.photos/id/233/200/200",
+      "description": "Kolej chińska",
+      "id": 5
     }
   ]
 }

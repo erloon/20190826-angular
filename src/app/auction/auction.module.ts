@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AuctionRoutingModule } from './auction-routing.module';
 import { AuctionsComponent } from './auctions/auctions.component';
@@ -11,6 +12,7 @@ import { AuctionsFilterPipe } from './auctions-filter.pipe';
 import { AddAuctionComponent } from './add-auction/add-auction.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CartItemCounterComponent } from './cart-item-counter/cart-item-counter.component';
+
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { CartItemCounterComponent } from './cart-item-counter/cart-item-counter.
   */
   imports: [
     CommonModule,
+    FormsModule,
     AuctionRoutingModule,
     HttpClientModule,
     SharedModule

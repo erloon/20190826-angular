@@ -1,33 +1,37 @@
 <h2>Dodaj nową aukcję</h2>
 <section class="row">
   <div class="col-6">
-    <img class="img-thumbnail" alt="Podgląd fotografii" src="https://picsum.photos/id/8/600/600">
+    <img class="img-thumbnail" alt="Podgląd fotografii" [src]="'https://picsum.photos/id/'+imgId+'/600/600'">
   </div>
   <div class="col-6">
-    <form>
+    <div class="alert alert-danger" *ngIf="errorMessage">
+        {{errorMessage}}
+    </div>
+    <form #auctionForm="ngForm" (ngSubmit)="handleSubmit(auctionForm)">
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text"><i class="fa fa-edit"></i></span>
         </div>
-        <input type="text" name="title" class="form-control" placeholder="Nazwa aukcji">
+        <input ngModel type="text" name="title" class="form-control" placeholder="Nazwa aukcji" required>
       </div>
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text"><i class="fa fa-tag"></i></span>
         </div>
-        <input type="number" name="price" class="form-control" placeholder="Cena aukcji">
+        <input ngModel type="number" name="price" class="form-control" placeholder="Cena aukcji" required>
       </div>
 
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text"><i class="fa fa-image"></i></span>
         </div>
-        <input type="number" name="imgUrl" class="form-control">
+        <input [(ngModel)]="imgId" type="number" name="imgUrl" class="form-control" required>
       </div>
       <div class="input-group mb-3">
-        <textarea rows="5" class="form-control" name="description" placeholder="Opis aukcji"></textarea>
+        <textarea ngModel rows="5" class="form-control" name="description" placeholder="Opis aukcji"></textarea>
       </div>
-      <button class="btn btn-primary" type="submit"><i class="fa fa-gavel"> </i>
+      <button class="btn btn-primary" type="submit" [disabled]="auctionForm.invalid">
+        <i class="fa fa-gavel"> </i>
         Dodaj aukcję
       </button>
     </form>
